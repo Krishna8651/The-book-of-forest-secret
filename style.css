@@ -1,0 +1,315 @@
+/* ========== STYLE.CSS — GLORIOUS, ADVENTUROUS, 100% MAGIC ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle at 20% 30%, #0a2818, #030e07);
+  font-family: 'Cinzel', 'Georgia', 'Times New Roman', serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  position: relative;
+  overflow-x: hidden;
+  border: 12px double rgba(172, 255, 120, 0.2);
+  box-shadow: inset 0 0 100px #1e3b1e;
+}
+
+/* MYSTICAL PARTICLES — WILD FOREST SPIRITS */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: url('data:image/svg+xml;utf8,<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="forestFire" cx="40%" cy="60%" r="80%"><stop offset="10%" stop-color="%23d4ff9f" stop-opacity="0.15"/><stop offset="90%" stop-color="%23072812" stop-opacity="0.9"/></radialGradient></defs><rect width="100%" height="100%" fill="url(%23forestFire)"/></svg>');
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* SACRED BOOK — relic from deep forest */
+.sacred-book {
+  max-width: 1300px;
+  width: 100%;
+  background: rgba(15, 35, 20, 0.7);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 3px solid #f9f3b0;
+  box-shadow: 0 0 50px #b6ff9b, 0 0 0 2px #aef0b0 inset, 0 30px 50px black;
+  border-radius: 70px 20px 70px 20px;
+  padding: 2.8rem 2.5rem;
+  position: relative;
+  z-index: 30;
+  transition: box-shadow 0.6s, border 0.4s;
+}
+
+.sacred-book:hover {
+  box-shadow: 0 0 100px #fdffb8, 0 0 0 6px #fbf3a0 inset, 0 30px 70px #050505;
+  border-color: #fffed8;
+}
+
+/* PORTAL HEADER — DOOR OF GLORY */
+.portal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 4px ridge #ffe88e;
+  padding-bottom: 1.2rem;
+  margin-bottom: 2.2rem;
+  flex-wrap: wrap;
+}
+
+.book-title {
+  font-size: 2.4rem;
+  font-weight: 900;
+  letter-spacing: 7px;
+  background: linear-gradient(45deg, #fffed0, #e5ffb0, #eaffc4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 25px #c2ffa0);
+  text-shadow: 0 0 40px #7ad87a;
+}
+
+.gleaming-door {
+  font-size: 1.9rem;
+  background: rgba(189, 161, 15, 0.3);
+  padding: 0.4rem 1.8rem;
+  border-radius: 70px 12px 70px 12px;
+  border: 2px solid #fffeca;
+  box-shadow: 0 0 40px #ffdd66, inset 0 0 20px #fffcd0;
+  color: #fffef7;
+  backdrop-filter: blur(10px);
+  font-weight: bold;
+  text-shadow: 0 0 10px #fbffa3;
+  transition: 0.3s;
+}
+
+/* FOREST EPIC — ENHANCED, ANCIENT PROPHECY */
+.forest-epic {
+  background: #0d281be0;
+  backdrop-filter: blur(10px);
+  padding: 2.5rem 2.5rem;
+  border-radius: 130px 20px 130px 20px;
+  border-left: 14px solid #ffea8a;
+  border-bottom: 10px solid #c5e0a0;
+  margin-bottom: 3rem;
+  color: #ffffe7;
+  font-size: 1.6rem;
+  line-height: 2.2;
+  text-shadow: 3px 3px 0 #152012;
+  box-shadow: inset 0 0 60px #2b572b, 0 20px 40px black;
+  transition: 0.4s;
+}
+
+.forest-epic:hover {
+  border-left-color: #ffb86b;
+  background: #153020e0;
+  box-shadow: inset 0 0 90px #528252, 0 0 70px #b8f0a0;
+}
+
+.opening-line {
+  font-size: 2rem;
+  font-weight: bold;
+  display: inline-block;
+  background: radial-gradient(#fffed0, #ebffb0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 25px gold);
+}
+
+.ancient-verse {
+  display: block;
+  margin-top: 1.2rem;
+  font-style: italic;
+  border-left: 6px solid #d9ffa0;
+  padding-left: 1.8rem;
+  font-size: 1.5rem;
+}
+
+.quest-hint {
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
+  background: #00000060;
+  padding: 0.3rem 1rem;
+  border-radius: 60px;
+  display: inline-block;
+  border: 1px dashed #ffe5a0;
+  letter-spacing: 5px;
+  color: #fffed0;
+}
+
+/* HERO CARDS — now far more adventurous */
+.hero-animal-houses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+.hero-card {
+  background: linear-gradient(165deg, #1c3922, #0a1f0e);
+  padding: 2rem 0.8rem 1.2rem;
+  border-radius: 70px 18px 70px 18px;
+  flex: 1 1 240px;
+  text-align: center;
+  border: 3px solid #eaf0a0;
+  box-shadow: 0 0 40px #89c489, inset 0 -10px 20px #000000b0;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  color: #fffbe3;
+  position: relative;
+}
+
+.hero-card:hover {
+  transform: scale(1.1) translateY(-16px);
+  border-color: #ffeeb0;
+  box-shadow: 0 0 70px #c6ffa0, inset 0 0 35px #baf0a0;
+  background: linear-gradient(165deg, #2e5530, #153d18);
+}
+
+.animal-aura {
+  font-size: 4.8rem;
+  filter: drop-shadow(0 0 30px #ffe685);
+  margin-bottom: 0.3rem;
+}
+
+.animal-name {
+  font-size: 2.1rem;
+  font-weight: 900;
+  background: #1d3b1dd0;
+  border-radius: 80px;
+  padding: 0.2rem 0.8rem;
+  backdrop-filter: blur(4px);
+  color: #fffed8;
+  text-shadow: 0 0 25px #ebffb0;
+  display: inline-block;
+  border: 1px solid #fffeb0;
+}
+
+.house-sign {
+  font-size: 1.25rem;
+  margin: 0.8rem 0 0.5rem;
+  color: #fefacb;
+  text-shadow: 0 0 6px #abd47a;
+}
+
+.relic-treat {
+  background: radial-gradient(circle at 20% 20%, #f0cf78, #b37b2e);
+  border: none;
+  border-radius: 60px;
+  padding: 0.9rem 1.7rem;
+  color: #1e2e0c;
+  font-size: 1.25rem;
+  font-weight: 900;
+  margin-top: 0.9rem;
+  border-bottom: 8px solid #5e401a;
+  transition: 0.06s linear;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 30px #e5ffa0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.relic-treat:active {
+  border-bottom-width: 3px;
+  transform: translateY(7px);
+  background: radial-gradient(#fbe5a0, #cb9b42);
+  box-shadow: 0 0 60px gold;
+}
+
+/* STREAM SHRINE — where DEER pours celestial tea */
+.stream-shrine {
+  background: linear-gradient(145deg, #1f4a2a, #0c2b15);
+  padding: 1.8rem 2.2rem;
+  border-radius: 200px 20px 200px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  border: 4px solid #aaffcc;
+  box-shadow: inset 0 0 60px #326a42, 0 0 70px #7fef9f;
+  margin: 1.8rem 0;
+  color: #fffee0;
+}
+
+.stream-glyph {
+  font-size: 2.4rem;
+  text-shadow: 0 0 30px cyan;
+  animation: flow 3s infinite alternate;
+}
+
+@keyframes flow {
+  0% { opacity: 0.7; text-shadow: 0 0 10px aqua; }
+  100% { opacity: 1; text-shadow: 0 0 40px #f0ffe0; }
+}
+
+.deer-throne {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  font-size: 2rem;
+  background: #183518e0;
+  padding: 0.8rem 2rem;
+  border-radius: 100px;
+  border: 2px solid #ffeaa0;
+}
+
+.tea-cauldron {
+  font-size: 3rem;
+  filter: drop-shadow(0 0 30px #f6ffa0);
+}
+
+/* ORACLE MESSAGE — EPIC STORY PANEL */
+.oracle-message {
+  background: #051007f0;
+  margin-top: 2.5rem;
+  padding: 1.8rem 2.5rem;
+  border-radius: 120px 12px 120px 12px;
+  border-top: 10px solid #ffdb8e;
+  border-bottom: 6px solid #b8e07a;
+  color: #ffffe4;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 700;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 -10px 50px #3e7a3e, inset 0 0 40px #587a42;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-break: break-word;
+  font-style: italic;
+  transition: 0.3s;
+}
+
+.oracle-message span {
+  background: linear-gradient(#fffdcd, #f5ffb0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  margin-left: 0.8rem;
+}
+
+.eternal-seal {
+  margin-top: 1.6rem;
+  text-align: center;
+  color: #ffe7a0;
+  font-size: 1.2rem;
+  border-top: 2px solid #9cc97c;
+  padding-top: 1.2rem;
+  letter-spacing: 6px;
+  text-shadow: 0 0 20px #a0ffa0;
+}
+
+/* responsive glory */
+@media (max-width: 800px) {
+  .book-title { font-size: 1.7rem; }
+  .forest-epic { font-size: 1.2rem; }
+  .oracle-message { font-size: 1.3rem; }
+}
